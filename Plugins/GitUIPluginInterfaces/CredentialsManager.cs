@@ -39,8 +39,8 @@ namespace GitUIPluginInterfaces
             foreach (var networkCredentials in credentials)
             {
                 AdysTechCredentialManagerWrapper.UpdateCredentials(networkCredentials.Key,
-                    networkCredentials.Value.UserName,
-                    networkCredentials.Value.Password);
+                    networkCredentials.Value?.UserName,
+                    networkCredentials.Value?.Password);
             }
         }
 
